@@ -67,7 +67,7 @@ export class NASACards extends Component {
                 this.setState({ startDate: value });
               }}
               renderInput={(params) => <TextField {...params} />}
-              format="YYYY-MM-DD"
+              aria-label="start date picker"
             />
             <DatePicker
               label="End date"
@@ -76,13 +76,14 @@ export class NASACards extends Component {
                 this.setState({ endDate: value });
               }}
               renderInput={(params) => <TextField {...params} />}
-              format="YYYY-MM-DD"
+              aria-label="end date picker"
             />
             <Button
               onClick={() => {
                 this.handleSearchDateRangePictures();
               }}
               variant="contained"
+              aria-label="search images within a date range"
             >
               Search
             </Button>

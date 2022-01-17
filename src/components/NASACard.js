@@ -30,10 +30,10 @@ export class NASACard extends Component {
             sx={{ height: 400 }}
           />
           <CardContent sx={{ height: 50 }}>
-            <Typography gutterBottom variant="h6" component="div">
+            <Typography gutterBottom variant="h6" component="div" aria-label="title">
               {this.props.d.title}
             </Typography>
-            <Typography variant="body2" color="text.secondary">
+            <Typography variant="body2" color="text.secondary" aria-label="date">
               {this.props.d.date}
             </Typography>
           </CardContent>
